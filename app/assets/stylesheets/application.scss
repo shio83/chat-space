@@ -1,6 +1,9 @@
-@import "reset";
-@import "colors";
+@import "config/reset";
+@import "config/colors";
 @import "font-awesome";
-@import "chat-side";
-@import "chat-main";
-@import "mixin";
+@import "modules/chat-side";
+@import "modules/chat-main";
+@import "mixins/mixin";
+@import "user";
+@import "modules/flash";
+@import "modules/group"
