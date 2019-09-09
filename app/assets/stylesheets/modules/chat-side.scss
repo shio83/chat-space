@@ -2,7 +2,6 @@
   color: white;
   width: 300px;
   box-sizing: border-box;
-  float: left;
   .header {
     background-color:  #253141;
     height: 100px;
@@ -34,9 +33,11 @@
       box-sizing: border-box;
       padding: 20px 0 40px;
       &__name {
+        color: #fff;
         font-size: 15px;
       }
       &__message {
+        color: #fff;
         font-size: 11px;
         margin-top: 5px;
       }

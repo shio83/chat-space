@@ -4,6 +4,8 @@
 @import "modules/chat-side";
 @import "modules/chat-main";
 @import "mixins/mixin";
+@import "mixins/vendor_prefix";
 @import "user";
 @import "modules/flash";
-@import "modules/group"
+@import "modules/group";
+@import "messages/messages.scss"
