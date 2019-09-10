@@ -1,11 +1,9 @@
 .chat-main {
   width: calc(100% - 300px);
-  float: left;
   .header {
     box-sizing: border-box;
     height: 100px;
     padding: 0 40px;
-    border-bottom: solid 1px #eee;
     .left-header {
       float:left;
       &__group-name {
@@ -20,33 +18,31 @@
           margin-top: 15px;
           .member {
             display: inline-block;
-            padding-left:5px
+            padding-right:5px
           }
       }
     }
     .right-header {
+      border: 1px solid $light_blue;
       height: 40px;
       line-height: 40px;
       padding: 0 20px;
-      margin-top: 30px;
-      position: absolute;
-      right: 40px;
-      border: solid 1px;
+      margin-top: 28px;
+      float: right;
       color: $light_blue;
       cursor: pointer;
     }
   }
 
   .messages {
-    height: calc(100vh - 190px);
-    padding: 46px 40px;
+    height: calc(100vh - 100px - 90px);
+    padding: 46px 40px 0;
     background-color: #fafafa;
     box-sizing: border-box;
+    overflow: scroll;
     .message {
-      margin-bottom: 40px;
       .upper-info {
         display: flex;
-        margin-bottom: 10px;
         &__talker {
           color: #434a54;
           font-size: 16px;
@@ -59,10 +55,11 @@
         }
       }
       .lower-info {
+        margin-top: 10px;
         &__text {
           font-size: 14px;
           color: #434A54;
-          margin-bottom: 10px;
+          margin-bottom: 40px;
         }
       }
     }
