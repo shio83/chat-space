@@ -10,14 +10,13 @@
         %ul.left-header__group-members
           member :
           %li.member
-            一郎
-          %li.member
-            二郎
-          %li.member
-            三郎
+            - @group.users.each do |user|
+              = user.name
+
       .right-header
         .right-header__button
-          edit
+          = link_to 'Edit', edit_group_path(@group), class: "edit_btn"
+
 
     .messages
       = render @messages
